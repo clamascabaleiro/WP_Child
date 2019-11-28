@@ -37,6 +37,8 @@ get_header(); ?>
 				/* Start the Loop */
 				while ( have_posts() ) :
 					the_post();
+					the_title();
+					the_author();
 				?>
 				<h3>Estoy en loop</h3>
 				<?php the_excerpt();
